@@ -1,7 +1,16 @@
 import requests
 from bs4 import BeautifulSoup as BS
 
-url = 'https://stopgame.ru/review/new/stopchoice'
+#s = requests.Session()
+#get CSRF
+#auth_html = s.get(url)
+#auth_bs = BS(auth_html.content, 'html.parser')
+#csrf = auth_bs.select('input[name=YII_CSRF_TOKEN]')[0]['value']
+#print(csrf)
+#затем  делаем пост запрос через answer = s.post('url-login', data={тут словарь требуемый от пользователя})
+#ans_bs = BS(answer.content, 'html.parser')
+
+url = #название
 r = requests.get(url)
 html = BS(r.content, 'html.parser')
 
